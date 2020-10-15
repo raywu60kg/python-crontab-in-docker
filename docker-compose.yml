@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+  python-crontab-in-docker:
+    image: python-crontab-in-docker:dev
+    environment:
+      - TZ=Asia/Taipei
+      - test_env=1
+    # command:
+    #   - make
+    #   - init-crontab
+    # entrypoint:
+    #   - cron
+    #   - -f
+
+      
