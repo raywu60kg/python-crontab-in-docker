@@ -16,4 +16,4 @@ RUN pip install pipenv
 ADD . . 
 RUN pipenv install --system --deploy --ignore-pipfile
 
-CMD ["python", "init_crontab.py"]
+ENTRYPOINT ["/bin/bash", "entrypoint.sh"]

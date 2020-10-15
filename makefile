@@ -5,6 +5,3 @@ build:
 
 run:
 	docker run -it --rm ${TAG} bash
-
-init-crontab:
-	python init_crontab.py
